@@ -530,6 +530,37 @@ section.hero .hero--contentContainer .hero--contentContainer_btnContainer {
   gap: 1rem;
 }
 
+section.trust {
+  background: #eee;
+  padding: 1rem;
+  overflow: auto;
+}
+section.trust .trust--content__container {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+section.trust .trust--content__container label {
+  opacity: 0.6;
+  font-weight: bold;
+}
+section.trust .trust--content__container .trust--content__item {
+  display: flex;
+  place-content: center;
+}
+section.trust .trust--content__container .trust--content__item img {
+  width: 125px;
+  aspect-ratio: 3/2;
+  -o-object-fit: contain;
+     object-fit: contain;
+  mix-blend-mode: luminosity;
+}
+section.trust .trust--content__container .trust--content__item img:hover {
+  mix-blend-mode: normal;
+  cursor: pointer;
+}
+
 .footer {
   box-shadow: 0 0 2px;
   margin-top: auto;

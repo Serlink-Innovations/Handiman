@@ -84,6 +84,41 @@ section.hero {
   }
 }
 
+section.trust {
+  background: #eee;
+  padding: 1rem;
+  overflow: auto;
+
+  .trust--content__container {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+
+    label {
+      opacity: 0.6;
+      font-weight: bold;
+    }
+
+    .trust--content__item {
+      display: flex;
+      place-content: center;
+    }
+
+    .trust--content__item img {
+      width: 125px;
+      aspect-ratio: 3/2;
+      object-fit: contain;
+      mix-blend-mode: luminosity;
+    }
+
+    .trust--content__item img:hover {
+      mix-blend-mode: normal;
+      cursor: pointer;
+    }
+  }
+}
+
 .footer {
   box-shadow: 0 0 2px;
   margin-top: auto;

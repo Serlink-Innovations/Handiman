@@ -54,4 +54,50 @@
 
 </header>
 
+<section class="trust">
+
+    <div class="trust--content__container container mx-auto">
+
+        <label for="trustedby">Trusted By:</label>
+
+        <div class="trust--content__item">
+
+            <img src="https://ttca.com/wp-content/uploads/2021/12/agostini-logo-768x149.png" alt="Agostini">
+
+        </div>
+
+        <div class="trust--content__item">
+
+            <img src="https://ttca.com/wp-content/uploads/2021/12/scl-logo-768x259.png" alt="scl trinidad ltd">
+
+        </div>
+
+        <div class="trust--content__item">
+
+            <img src="https://ttca.com/wp-content/uploads/2022/01/abs-logo.png" alt="ABS">
+
+        </div>
+
+        <div class="trust--content__item">
+
+            <img src="https://massycat.com/wp-content/uploads/2020/05/MassyCat_logo01.png" alt="Massy Cat">
+
+        </div>
+
+        <div class="trust--content__item">
+
+            <img src="https://ttca.com/wp-content/uploads/2022/02/cariri-logo.png" alt="Cariri">
+
+        </div>
+
+        <div class="trust--content__item">
+
+            <img src="https://ttca.com/wp-content/uploads/2021/12/ansa-coatings-logo.png" alt="Ansa Coatings">
+
+        </div>
+
+    </div>
+
+</section>
+
 <?php require_once 'footer.php'; ?>
