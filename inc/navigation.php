@@ -1,6 +1,6 @@
 <nav class="navigation container mx-auto" role="navigation">
 
-    <a class="logo" href="">
+    <a class="logo" href="/">
         <strong><span class="clr-primary">Handi</span><span>man</span></strong>
     </a>
 
