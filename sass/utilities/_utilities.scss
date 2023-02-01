@@ -1,0 +1,84 @@
+@import "../base/base";
+
+/**
+*   Buttons
+**/
+.btn {
+  align-items: center;
+  border: none;
+  border-radius: 100vmax;
+  cursor: pointer;
+  background-color: #eee;
+  display: inline-flex;
+  font-weight: bold;
+  font-size: 0.95rem;
+  padding: 12px 15px;
+  line-height: 1;
+  column-gap: 0.4em;
+  letter-spacing: 1px;
+
+  svg {
+    width: 25px;
+    height: 25px;
+    display: block;
+    fill: var(--text-secondary);
+  }
+}
+
+.btn:hover {
+  background-color: rgba($color: #4c0f12, $alpha: 0.8);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  border: 2px solid var(--text-secondary);
+  padding: 10px 13px;
+}
+
+.btn-secondary_outline {
+  border: 2px solid var(--white);
+  background-color: transparent;
+  color: var(--text-secondary);
+  padding: 10px 15px;
+}
+
+/**
+*   Colors
+**/
+.clr-primary {
+  color: var(--primary);
+}
+
+/**
+*   Containers
+**/
+.container {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/**
+*   Margins
+**/
+.mx-auto {
+  margin-inline: auto;
+}
