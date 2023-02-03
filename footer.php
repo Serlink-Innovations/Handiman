@@ -12,7 +12,7 @@
 
     <div class="copyright">
 
-        <label for="">Copyright Handiman 2023 | All rights reserved</label>
+        <label for="">Copyright © Handiman 2023 | All rights reserved</label>
 
     </div>
 

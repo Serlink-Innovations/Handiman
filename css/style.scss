@@ -248,10 +248,15 @@ section.content {
   margin-top: auto;
 
   .copyright {
+    align-items: center;
     box-shadow: 0 0 2px;
     display: flex;
+    font-weight: bold;
+    font-size: clamp(0.6rem, 3vw, 1rem);
+    text-transform: uppercase;
     justify-content: center;
     letter-spacing: 1px;
     padding: 1em;
+    text-align: center;
   }
 }
