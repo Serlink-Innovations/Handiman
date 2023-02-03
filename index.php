@@ -100,4 +100,108 @@
 
 </section>
 
+<section class="content container mx-auto">
+
+    <div class="content--headerTitle">
+
+        <p class="display-3 bold">Project Highlights</p>
+
+        <p class="display-6">See Completed Projects of Members</p>
+
+    </div>
+
+    <div class="content--projects">
+
+        <div class="content--projects__items">
+
+            <img src="https://images.pexels.com/photos/5059240/pexels-photo-5059240.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                alt="Project A">
+
+            <div class="content--projects__itemContent">
+
+                <div class="content--headerTitle">
+
+                    <p class="display-6">Benjamin Building</p>
+                    <p class="display-3 bold">Project A</p>
+
+                </div>
+
+                <button>
+                    View Project
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="content--projects__items">
+
+            <img src="https://images.pexels.com/photos/9686001/pexels-photo-9686001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Hyatt Regency">
+
+            <div class="content--projects__itemContent">
+
+                <div class="content--headerTitle">
+
+                    <p class="display-6">Benjamin Building</p>
+                    <p class="display-3 bold">Project A</p>
+
+                </div>
+
+                <button>
+                    View Project
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="content--projects__items">
+
+            <img src="https://images.pexels.com/photos/14341173/pexels-photo-14341173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Project D">
+
+            <div class="content--projects__itemContent">
+
+                <div class="content--headerTitle">
+
+                    <p class="display-6">Benjamin Building</p>
+                    <p class="display-3 bold">Project A</p>
+
+                </div>
+
+                <button>
+                    View Project
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="content--projects__items">
+
+            <img src="https://images.pexels.com/photos/93400/pexels-photo-93400.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Project C">
+
+            <div class="content--projects__itemContent">
+
+                <div class="content--headerTitle">
+
+                    <p class="display-6">Benjamin Building</p>
+                    <p class="display-3 bold">Project A</p>
+
+                </div>
+
+                <button>
+                    View Project
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 <?php require_once 'footer.php'; ?>

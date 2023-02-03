@@ -59,6 +59,7 @@
 .container {
   padding-right: 1rem;
   padding-left: 1rem;
+  margin-inline: auto;
 }
 @media (min-width: 768px) {
   .container {
@@ -77,8 +78,33 @@
 }
 
 /**
+*   Cards
+**/
+
+/**
+* Display
+**/
+.display-3 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+/**
+* Font Weight
+**/
+.bold {
+  font-weight: bold;
+}
+
+/**
 *   Margins
 **/
+@media (max-width: 768px) {
+  .mx-auto {
+    margin: 0 !important;
+  }
+}
+
 .mx-auto {
   margin-inline: auto;
 }
