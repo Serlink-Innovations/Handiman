@@ -634,6 +634,9 @@ section.content .content--projects .content--projects__items .content--projects_
   left: 0;
   z-index: 1;
 }
+section.content .content--projects .content--projects__items .content--projects__itemContent .content--headerTitle {
+  margin: 0;
+}
 section.content .content--projects .content--projects__items .content--projects__itemContent p {
   color: var(--text-secondary);
 }

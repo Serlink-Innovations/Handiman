@@ -172,6 +172,10 @@ section.content {
         left: 0;
         z-index: 1;
 
+        .content--headerTitle {
+          margin: 0;
+        }
+
         p {
           color: var(--text-secondary);
         }
