@@ -454,6 +454,10 @@ template {
 /**
 * Display
 **/
+.display-4 {
+  font-size: 1.3rem;
+}
+
 .display-3 {
   font-size: 1.5rem;
   line-height: 1.2;
@@ -564,17 +568,40 @@ section.trust {
   padding: 1rem;
   overflow: hidden;
 }
-@media (max-width: 996px) {
+@media (max-width: 1200px) {
   section.trust .trust--content__container {
     align-items: start !important;
     display: flex !important;
     flex-direction: column !important;
+    padding-inline: 0 !important;
+  }
+  section.trust .trust--content__container .trust--content__containerTray {
+    width: 100%;
+    -webkit-animation: marquee 10s linear infinite;
+            animation: marquee 10s linear infinite;
+  }
+  @-webkit-keyframes marquee {
+    100% {
+      transform: translateX(100%, 0);
+    }
+    0% {
+      transform: translateX(-100%, 0);
+    }
+  }
+  @keyframes marquee {
+    100% {
+      transform: translateX(100%, 0);
+    }
+    0% {
+      transform: translateX(-100%, 0);
+    }
   }
 }
 section.trust .trust--content__container {
   align-items: center;
   display: grid;
   grid-template-columns: auto 1fr;
+  overflow: hidden;
 }
 section.trust .trust--content__container label {
   color: rgba(0, 0, 0, 0.6);
@@ -586,7 +613,6 @@ section.trust .trust--content__container .trust--content__containerTray {
   display: flex;
   gap: 1rem;
   justify-content: space-between;
-  overflow: auto;
 }
 section.trust .trust--content__container .trust--content__containerTray label {
   opacity: 0.6;
@@ -610,47 +636,47 @@ section.trust .trust--content__container .trust--content__containerTray .trust--
 }
 
 @media (min-width: 1200px) {
-  section.content {
+  section.projects {
     display: grid;
     overflow: hidden !important;
   }
-  section.content .content--projects {
+  section.projects .content--projects {
     display: grid !important;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
-  section.content .content--projects .content--projects__items {
+  section.projects .content--projects .content--projects__items {
     width: inherit !important;
   }
 }
-section.content {
+section.projects {
   overflow: hidden;
+  margin-block: 2rem !important;
 }
-section.content .content--headerTitle {
+section.projects .content--headerTitle {
   margin-block: 1rem;
 }
-section.content .content--headerTitle p {
+section.projects .content--headerTitle p {
   margin-block: 0.3rem;
 }
-section.content .content--projects {
+section.projects .content--projects {
   display: inline-flex;
   gap: 1rem;
   overflow: auto;
-  padding-bottom: 2rem;
 }
-section.content .content--projects .content--projects__items {
+section.projects .content--projects .content--projects__items {
   width: 300px;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
 }
-section.content .content--projects .content--projects__items img {
+section.projects .content--projects .content--projects__items img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-section.content .content--projects .content--projects__items .content--projects__itemContent {
+section.projects .content--projects .content--projects__items .content--projects__itemContent {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -662,13 +688,13 @@ section.content .content--projects .content--projects__items .content--projects_
   left: 0;
   z-index: 1;
 }
-section.content .content--projects .content--projects__items .content--projects__itemContent .content--headerTitle {
+section.projects .content--projects .content--projects__items .content--projects__itemContent .content--headerTitle {
   margin: 0;
 }
-section.content .content--projects .content--projects__items .content--projects__itemContent p {
+section.projects .content--projects .content--projects__items .content--projects__itemContent p {
   color: var(--text-secondary);
 }
-section.content .content--projects .content--projects__items .content--projects__itemContent button {
+section.projects .content--projects .content--projects__items .content--projects__itemContent button {
   border: none;
   background-color: rgba(255, 255, 255, 0.2);
   color: var(--text-secondary);
@@ -676,11 +702,11 @@ section.content .content--projects .content--projects__items .content--projects_
   letter-spacing: 1px;
   padding: 12px 15px;
 }
-section.content .content--projects .content--projects__items .content--projects__itemContent button:hover {
+section.projects .content--projects .content--projects__items .content--projects__itemContent button:hover {
   background-color: rgba(255, 255, 255, 0.3);
   font-weight: bold;
 }
-section.content .content--projects .content--projects__items:after {
+section.projects .content--projects .content--projects__items:after {
   content: "";
   width: 100%;
   height: 100%;
@@ -692,6 +718,107 @@ section.content .content--projects .content--projects__items:after {
   bottom: 0;
 }
 
+section.pointers {
+  display: flex;
+  flex-wrap: wrap;
+  margin-block: 2rem !important;
+}
+section.pointers .pointers--content {
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(49%, 1fr));
+}
+section.pointers .pointers--content .pointers--content__text {
+  min-width: 50%;
+}
+section.pointers .pointers--content .pointers--content__text .pointer--title {
+  font-size: clamp(1rem, 3vw, 1.8rem);
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+}
+section.pointers .pointers--content .pointers--content__text .pointers--content__list {
+  display: grid;
+  gap: 0.5rem;
+}
+section.pointers .pointers--content .pointers--content__text .pointers--content__list .pointer--content__listItem {
+  display: grid;
+}
+section.pointers .pointers--content .pointers--content__text .pointers--content__list .pointer--content__listItem .listTitle {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  padding-block: 0.4rem;
+}
+section.pointers .pointers--content .pointers--content__text .pointers--content__list .pointer--content__listItem .listTitle::before {
+  content: url("/assets/img/check_circle_icon.svg");
+  width: 20px;
+  height: 20px;
+  display: flex;
+}
+section.pointers .pointers--content .pointers--content__text .pointers--content__list .pointer--content__listItem p {
+  font-size: clamp(0.8rem, 10vw, 1rem);
+  line-height: 1.2;
+  margin: 0;
+}
+section.pointers .pointers--content .pointers--content__img {
+  min-width: 50%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+section.pointers .pointers--content .pointers--content__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.categories {
+  background-color: var(--primary);
+  margin-block: 2rem;
+}
+section.categories .categories--container {
+  padding-block: 1rem;
+}
+section.categories .categories--container .categories--title {
+  color: var(--text-secondary);
+  font-weight: bold;
+  font-size: clamp(1rem, 10vw, 2rem);
+}
+@media (max-width: 600px) {
+  section.categories .categories--container .categories--items__container {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)) !important;
+  }
+}
+section.categories .categories--container .categories--items__container {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+section.categories .categories--container .categories--items__container .categories--item {
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+  justify-content: center;
+  padding-block: 1rem;
+}
+section.categories .categories--container .categories--items__container .categories--item svg {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100vmax;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: block;
+  margin: auto;
+  fill: var(--text-secondary) !important;
+  padding: 0.8rem;
+}
+section.categories .categories--container .categories--items__container .categories--item label {
+  color: var(--text-secondary);
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
 .footer {
   box-shadow: 0 0 2px;
   margin-top: auto;
@@ -701,10 +828,10 @@ section.content .content--projects .content--projects__items:after {
   box-shadow: 0 0 2px;
   display: flex;
   font-weight: bold;
-  font-size: clamp(0.6rem, 3vw, 1rem);
+  font-size: clamp(0.6rem, 6vw, 0.85rem);
   text-transform: uppercase;
   justify-content: center;
   letter-spacing: 1px;
-  padding: 1em;
+  padding: 2em;
   text-align: center;
 }/*# sourceMappingURL=style.css.map */
