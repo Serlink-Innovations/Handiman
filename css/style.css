@@ -19,6 +19,7 @@
 }
 .navigation .logo {
   font-size: clamp(1rem, 10vw, 2rem);
+  letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -32,11 +33,32 @@
 }
 .navigation .nav .nav-item {
   display: block;
+  padding: 12px 15px;
 }
 .navigation .nav .nav-item .nav-link {
   color: var(--text-secondary);
-  padding: 12px 15px;
   text-decoration: none;
+  position: relative;
+  padding-bottom: 6px;
+}
+.navigation .nav .nav-item .nav-link:hover {
+  font-weight: bold;
+}
+.navigation .nav .nav-item .nav-link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.navigation .nav .nav-item .nav-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 .navigation .nav--buttons {
   align-items: center;
@@ -428,8 +450,6 @@ template {
 *   Containers
 **/
 .container {
-  padding-right: 1rem;
-  padding-left: 1rem;
   margin-inline: auto;
 }
 
@@ -778,12 +798,13 @@ section.categories {
   margin-block: 2rem;
 }
 section.categories .categories--container {
-  padding-block: 1rem;
+  padding-block: 2rem;
 }
 section.categories .categories--container .categories--title {
   color: var(--text-secondary);
   font-weight: bold;
   font-size: clamp(1rem, 10vw, 2rem);
+  margin-top: 0;
 }
 @media (max-width: 600px) {
   section.categories .categories--container .categories--items__container {
@@ -832,6 +853,6 @@ section.categories .categories--container .categories--items__container .categor
   text-transform: uppercase;
   justify-content: center;
   letter-spacing: 1px;
-  padding: 2em;
+  padding: 1em;
   text-align: center;
 }/*# sourceMappingURL=style.css.map */

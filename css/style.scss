@@ -330,12 +330,13 @@ section.categories {
   margin-block: 2rem;
 
   .categories--container {
-    padding-block: 1rem;
+    padding-block: 2rem;
 
     .categories--title {
       color: var(--text-secondary);
       font-weight: bold;
       font-size: clamp(1rem, 10vw, 2rem);
+      margin-top: 0;
     }
 
     @media (max-width: 600px) {
@@ -391,7 +392,7 @@ section.categories {
     text-transform: uppercase;
     justify-content: center;
     letter-spacing: 1px;
-    padding: 2em;
+    padding: 1em;
     text-align: center;
   }
 }
