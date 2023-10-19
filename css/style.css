@@ -9,7 +9,6 @@
   }
 }
 .navigation {
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   background-color: transparent;
@@ -391,6 +390,7 @@ template {
   --primary: #4c0f12;
   --white: #ffffff;
   --text-secondary: #ffffff;
+  font-family: sans-serif;
 }
 
 /**
@@ -597,16 +597,7 @@ section.trust {
   }
   section.trust .trust--content__container .trust--content__containerTray {
     width: 100%;
-    -webkit-animation: marquee 10s linear infinite;
-            animation: marquee 10s linear infinite;
-  }
-  @-webkit-keyframes marquee {
-    100% {
-      transform: translateX(100%, 0);
-    }
-    0% {
-      transform: translateX(-100%, 0);
-    }
+    animation: marquee 10s linear infinite;
   }
   @keyframes marquee {
     100% {
